@@ -1,4 +1,5 @@
-
+// sq2-3
+import './DiaDaSemana.css'
 function DiaDaSemana(){
     function verificarDia(){
         let dia = prompt("Digite o dia da Semana (1 a 7): ")
@@ -38,8 +39,8 @@ function DiaDaSemana(){
                 default: alert("Esse dia não existe")
             }
         }
-        return(
-            <div>
+    return(
+        <div className={"container-dia"}>
             <h2>Dia da semana</h2>
             <button onClick={verificarDia}>Verificar dia</button>
         </div>
