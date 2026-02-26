@@ -5,6 +5,8 @@ import Notas from './components/Notas'
 import MaiorNumero from './components/MaiorNumero'
 import IdadeDoCachorro from './components/IdadeDoCachorro'
 import CalculoDeIMC from './components/CalculoDeIMC'
+import ManoJuca from './components/ManoJuca'
+import JucaUber from './components/JucaUber'
 
 function App() {
 
@@ -17,6 +19,8 @@ function App() {
       <MaiorNumero />
       <IdadeDoCachorro />
       <CalculoDeIMC/>
+      <ManoJuca/>
+      <JucaUber/>
     </>
   )
 }
