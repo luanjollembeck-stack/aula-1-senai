@@ -5,10 +5,12 @@ function Bondinho() {
     const [inputMonitores, setInputMonitores] = useState('')
     const [pessoasTotal, setPessoasTotal] = useState('')
     const [podeNPode, setPodeNPode] = useState('')
+
     function somarPessoas() {
         let alunos = Number(inputAlunos)
         let monitores = Number(inputMonitores)
         let pessoas = ''
+        
         pessoas = 'tem ' + (alunos + monitores) + ' para ir no bondinho'
         setPessoasTotal(pessoas)
 
@@ -24,8 +26,6 @@ function Bondinho() {
         <div>
 
             <h2>Monitores e alunos</h2>
-
-            <br />
 
             <input type="Number"
                 value={inputAlunos}

@@ -6,6 +6,8 @@ import PressãoAr from './components/PressãoAr';
 import PapaiNoel from './components/PapaiNoel';
 import Notas from './components/Notas';
 import Bondinho from './components/Bondinho';
+import Pum from './components/Pum';
+import Combustivel from './components/Combustivel';
 
 function App() {
   // const [inputNome, setInputNome] = useState('')
@@ -33,6 +35,10 @@ function App() {
       <Notas />
       <hr/>
       <Bondinho />
+      <hr/>
+      <Pum />
+      <hr />
+      <Combustivel />
     </>
   )
 }
