@@ -4,7 +4,7 @@ function CardProduto(prop) {
         <div className="cont-card">
         {console.log(prop.p.nome)}
             <p className = 'imagem-produto'>{prop.p.imagem}</p>
-            <h2>Produto: {prop.p.nome}</h2>
+            <h2>Modelo: {prop.p.modelo}</h2>
             <p>Preço: R${prop.p.preco.toFixed(2).replace('.',',')}</p>
         </div>
     )

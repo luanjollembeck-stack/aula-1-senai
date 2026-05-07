@@ -5,7 +5,20 @@
   gap: 10px; 
   flex-wrap: wrap;
 }
-
+.lista-cavalos{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px; 
+  flex-wrap: wrap;
+}
+.lista-carros{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px; 
+  flex-wrap: wrap;
+}
 .counter {
   font-size: 16px;
   padding: 5px 10px;
