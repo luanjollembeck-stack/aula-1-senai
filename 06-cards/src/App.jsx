@@ -99,7 +99,11 @@ function App() {
     {
       id: 1,
       modelo: "Fusca 1300",
-      marca: "Volkswagen",
+      marca: <img
+      src="./volkswagen_logo.png"
+      className="minha-imagem1"
+      alt="Foto"
+    />,
       ano: 1974,
       cor: "Azul Pastel",
       quilometragem: 45000
@@ -107,7 +111,11 @@ function App() {
     {
       id: 2,
       modelo: "Mustang Fastback",
-      marca: "Ford",
+      marca: <img
+      src="./Ford_logo.png"
+      className="minha-imagem2"
+      alt="Foto"
+    />,
       ano: 1967,
       cor: "Preto",
       quilometragem: 12000
@@ -115,7 +123,11 @@ function App() {
     {
       id: 3,
       modelo: "Opala Diplomata",
-      marca: "Chevrolet",
+      marca: <img
+      src="./chevrolet_logo.png"
+      className="minha-imagem3"
+      alt="Foto"
+    />,
       ano: 1988,
       cor: "Cinza Metálico",
       quilometragem: 82000
@@ -123,7 +135,11 @@ function App() {
     {
       id: 4,
       modelo: "DeLorean DMC-12",
-      marca: "DeLorean",
+      marca: <img
+      src="./DMC_logo.png"
+      className="minha-imagem4"
+      alt="Foto"
+    />,
       ano: 1981,
       cor: "Aço Escovado",
       quilometragem: 5000
@@ -131,7 +147,11 @@ function App() {
     {
       id: 5,
       modelo: "F-40",
-      marca: "Ferrari",
+      marca: <img
+      src="./ferrari_logo.png"
+      className="minha-imagem5"
+      alt="Foto"
+    />,
       ano: 1987,
       cor: "Vermelho Corsa",
       quilometragem: 2500
@@ -139,7 +159,11 @@ function App() {
     {
       id: 6,
       modelo: "Maverick GT",
-      marca: "Ford",
+      marca: <img
+      src="./Ford_logo.png"
+      className="minha-imagem2"
+      alt="Foto"
+    />,
       ano: 1975,
       cor: "Laranja",
       quilometragem: 67000
@@ -147,7 +171,11 @@ function App() {
     {
       id: 7,
       modelo: "911 Carrera",
-      marca: "Porsche",
+      marca: <img
+      src="./porsche_logo.png"
+      className="minha-imagem6"
+      alt="Foto"
+    />,
       ano: 1993,
       cor: "Branco",
       quilometragem: 31000
@@ -155,7 +183,11 @@ function App() {
     {
       id: 8,
       modelo: "Kombi Corujinha",
-      marca: "Volkswagen",
+      marca: <img
+      src="./volkswagen_logo.png"
+      className="minha-imagem1"
+      alt="Foto"
+    />,
       ano: 1962,
       cor: "Saia e Blusa (Vermelho/Branco)",
       quilometragem: 95000
@@ -163,7 +195,11 @@ function App() {
     {
       id: 9,
       modelo: "Charger RT",
-      marca: "Dodge",
+      marca: <img
+      src="./dodge_logo.png"
+      className="minha-imagem7"
+      alt="Foto"
+    />,
       ano: 1971,
       cor: "Amarelo",
       quilometragem: 54000
@@ -171,7 +207,11 @@ function App() {
     {
       id: 10,
       modelo: "Shelby Cobra",
-      marca: "AC Cars",
+      marca: <img
+      src="./ACcars_logo.png"
+      className="minha-imagem8"
+      alt="Foto"
+    />,
       ano: 1965,
       cor: "Azul com Faixas Brancas",
       quilometragem: 1800
