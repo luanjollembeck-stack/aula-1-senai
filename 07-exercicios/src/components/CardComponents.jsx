@@ -1,12 +1,16 @@
 import './CardComponents.css'
-function CardVideogames(prop) {
+function CardVideogames({v, excluir}) {
+
+        const{id, imagem, nome, raridade, preco} = v
+    
     return (
         <div className="cont-videogames">
             <p className='imagem-videogames'></p>
-            <p>{prop.p.imagem}</p>
-            <p>Nome: {prop.p.nome}</p>
-            <p>Raridade: {prop.p.raridade}</p>
-            <p>Preço: R${prop.p.preco.toFixed(2).replace('.',',')}</p>
+            <p>{imagem}</p>
+            <p>Nome: {nome}</p>
+            <p>Raridade: {raridade}</p>
+            <p>Preço: R${preco.toFixed(2).replace('.',',')}</p>
+            <button onClick={() => excluir(id)}>excluir</button>
         </div>
     )
 }

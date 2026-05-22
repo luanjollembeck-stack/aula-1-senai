@@ -3,6 +3,7 @@ import { useState } from 'react';
 import CardVideogames from './components/CardComponents';
 
 function App() {
+
   const [videogames, setVideogames] = useState([
     {
       id: 0,
@@ -63,7 +64,7 @@ function App() {
     {
       id: 8,
       nome: 'Nintendo 64',
-      preco: 1500, 
+      preco: 1500,
       imagem: "👾",
       raridade: "Muito Raro"
     },
@@ -93,51 +94,75 @@ function App() {
     setInputPreco('')
     setInputRaridade('')
   }
+
+  function excluir(id) {
+    setVideogames(videogames.filter((v) => v.id != id))
+  }
+
   return (
     <>
       <div className="titulo">
         <h2>Loja de videogames</h2>
       </div>
-      <hr/>
+
+      <hr />
+
       <div className="cont-form">
+      
         <h2>Cadastro de coisas</h2>
+
         <div className="input-container">
-          <label htmlFor="">Imagem</label>
-          <input type="text"
+          <label>Imagem do videogame</label>
+          <input
+            type="text"
+            placeholder="Digite aqui"
             value={inputImagem}
             onChange={(e) => setInputimagem(e.target.value)}
           />
         </div>
+
         <div className="input-container">
-          <label htmlFor="">Nome</label>
+          <label>Nome do videogame</label>
           <input type="text"
+            placeholder="Digite aqui"
             value={inputNome}
             onChange={(e) => setInputNome(e.target.value)}
           />
         </div>
+
         <div className="input-container">
-          <label htmlFor="">Preço</label>
+          <label>Preço do videogame</label>
           <input type="text"
+            placeholder="Digite aqui"
             value={inputPreco}
             onChange={(e) => setInputPreco(e.target.value)}
           />
         </div>
+
         <div className="input-container">
-          <label htmlFor="">Raridade</label>
+          <label>Raridade do videogame</label>
           <input type="text"
+            placeholder="Digite aqui"
             value={inputRaridade}
             onChange={(e) => setInputRaridade(e.target.value)}
           />
         </div>
+
         <button onClick={cadastrar}>cadastrar</button>
+
       </div>
-      <hr/>
+
+      <hr />
+
+      <h1 className="name-exib">Lista de Exibição</h1>
+
       <div className="lista-videogames">
         {
           videogames.map((videogame) => (
-            <CardVideogames p={videogame} key={videogame.id} />))
+            <CardVideogames v={videogame} key={videogame.id} excluir={excluir} />))
         }
       </div>
+
     </>
   )
 }
